@@ -1,0 +1,267 @@
+baseURL = ''
+title = 'FarmFrontiers'
+languageCode = 'en-us'
+DefaultContentLanguage = 'en'
+enableEmoji = true
+enableGitInfo = false
+enableRobotsTXT = true
+canonifyURLs = true
+enableInlineShortcodes = true
+
+[pagination]
+  pagerSize = 6
+
+[darkmode_js]
+  assets = ['assets/js/darkmode.js']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      linkifyProtocol = 'https'
+      strikethrough = true
+      table = true
+      taskList = true
+      [markup.goldmark.typographer]
+        apostrophe = '&rsquo;'
+        disable = false
+        ellipsis = '&hellip;'
+        emDash = '&mdash;'
+        enDash = '&ndash;'
+        leftAngleQuote = '&laquo;'
+        leftDoubleQuote = '&ldquo;'
+        leftSingleQuote = '&lsquo;'
+        rightAngleQuote = '&raquo;'
+        rightDoubleQuote = '&rdquo;'
+        rightSingleQuote = '&rsquo;'
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = false
+        title = true
+      autoHeadingID = true
+      autoHeadingIDType = 'github'
+      wrapStandAloneImageWithinParagraph = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false
+
+[params]
+  author = 'Pushpz'
+  authorimage = "../assets/images/global/author.webp"
+  og_image = '/images/tailbliss-cover.png'
+  moto = "Super Fast, and Flexible"
+  description = "A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format."
+  disable_theme_toggle = false
+  disable_stay_uptodate = false
+
+[taxonomies]
+  category = 'Categories'
+  tag = 'Tags'
+
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = false
+    respectDoNotTrack = false
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = false
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = '0.114.0'
+
+[params.p1]
+  heading = "Our mission"
+  image = "images/pages/our-mission.png"
+
+[[params.p1.content]]
+  text = "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque."
+
+[[params.p1.content]]
+  text = "Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum."
+
+[[params.p1.content]]
+  text = "Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies."
+
+[params.p2]
+  heading = "Just in time for Hacktoberfest with JIT Tailwind."
+  image = "images/pages/hacktoberfest.jpg"
+
+[[params.p2.content]]
+  text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+
+[params.p3]
+  heading = "Backed by world-renowned investors"
+
+[[params.p3.content]]
+  text = "Sagittis scelerisque nulla cursus in enim consectetur quam."
+
+[[params.p3.links]]
+  text = "Meet our investors and advisors"
+  url = "#"
+
+[[params.p3.logos]]
+  identifier = "a"
+  image = "images/global/sample-logo.svg"
+  alt = "a"
+
+[[params.p3.logos]]
+  identifier = "b"
+
+[[params.p3.logos]]
+  identifier = "c"
+
+[[params.p3.logos]]
+  identifier = "d"
+
+[[params.p3.logos]]
+  identifier = "e"
+
+[[params.p3.logos]]
+  identifier = "f"
+
+[params.p4]
+  heading = "From the blog"
+
+[[params.p4.content]]
+  text = "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+
+[params.p5]
+  heading = "Stay Up to Date"
+  action = "#"
+  label = "Email address"
+  placeholder = "Enter your email"
+  button = "Notify me"
+
+[[params.p5.content]]
+  text = "Sagittis scelerisque nulla cursus in enim consectetur quam."
+
+[params.social_media]
+  [params.social_media.github]
+    enabled = true
+    url = 'https://github.com/nusserstudios'
+  [params.social_media.facebook]
+    enabled = true
+    url = 'https://facebook.com/nusserstudios'
+  [params.social_media.instagram]
+    enabled = true
+    url = 'https://instagram.com/nusserstudios'
+  [params.social_media.twitter]
+    enabled = true
+    url = 'https://twitter.com/nusserstudios'
+
+[menu]
+  [[menu.main]]
+    identifier = "prose"
+    name = "Prose"
+    url = "/prose/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "categories"
+    pre = "dropdown"
+    name = "Categories"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "dropdown"
+    pre = "complexdropdown"
+    name = "Dropdown"
+    weight = 40
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 50
+
+  [[menu.categories]]
+    identifier = "prose"
+    name = "Prose"
+    url = "/prose/"
+    weight = 10
+
+  [[menu.categories]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
+
+  [[menu.dropdown]]
+    identifier = "appearance"
+    pre = "stars"
+    name = "Appearance"
+    post = "Easy customization"
+    url = "#"
+    weight = 10
+
+  [[menu.dropdown]]
+    identifier = "comments"
+    pre = "comments"
+    name = "Comments"
+    post = "Check your latest comments"
+    url = "#"
+    weight = 20
+
+  [[menu.dropdown]]
+    identifier = "analytics"
+    pre = "piechart"
+    name = "Analytics"
+    post = "Take a look at your statistics"
+    url = "#"
+    weight = 30
+
+  [[menu.footer]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+  [[menu.footer]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/categories/blog/"
+    weight = 20
+
+  [[menu.footer]]
+    identifier = "news"
+    name = "News"
+    url = "/categories/news/"
+    weight = 30
+
+  [[menu.footer]]
+    identifier = "prose"
+    name = "Prose"
+    url = "/prose/"
+    weight = 40
+
+  [[menu.footer]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 50
