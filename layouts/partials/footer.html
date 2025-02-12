@@ -13,7 +13,8 @@
         </nav>
         <div class="flex justify-center mt-8 space-x-6">
             {{ if .Site.Params.Social_media.Facebook.Enabled }}
-            <a href="{{ $.Site.Params.Social_media.Facebook.Url }}" class="text-gray-400 hover:text-gray-300">
+            <a href="{{ $.Site.Params.Social_media.Facebook.Url }}" target="_blank" rel="noopener noreferrer"
+            class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">Facebook</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path fill-rule="evenodd"
@@ -22,8 +23,10 @@
                 </svg>
             </a>
             {{ end }}
+            
             {{ if .Site.Params.Social_media.Instagram.Enabled }}
-            <a href="{{ $.Site.Params.Social_media.Instagram.Url }}" class="text-gray-400 hover:text-gray-300">
+            <a href="{{ $.Site.Params.Social_media.Instagram.Url }}" target="_blank" rel="noopener noreferrer"
+            class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">Instagram</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path fill-rule="evenodd"
@@ -33,7 +36,8 @@
             </a>
             {{ end }}
             {{ if .Site.Params.Social_media.Twitter.Enabled }}
-            <a href="{{ $.Site.Params.Social_media.Twitter.Url }}" class="text-gray-400 hover:text-gray-300">
+            <a href="{{ $.Site.Params.Social_media.Twitter.Url }}" target="_blank" rel="noopener noreferrer"
+            class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">Twitter</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
@@ -42,7 +46,8 @@
             </a>
             {{ end }}
             {{ if .Site.Params.Social_media.Github.Enabled }}
-            <a href="{{ $.Site.Params.Social_media.Github.Url }}" class="text-gray-400 hover:text-gray-300">
+            <a href="{{ $.Site.Params.Social_media.Github.Url }}" target="_blank" rel="noopener noreferrer"
+            class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">GitHub</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path fill-rule="evenodd"
@@ -51,6 +56,28 @@
                 </svg>
             </a>
             {{ end }}
+            {{ if .Site.Params.Social_media.YouTube.Enabled }}
+<a href="{{ $.Site.Params.Social_media.YouTube.Url }}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-300">
+    <span class="sr-only">YouTube</span>
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill-rule="evenodd" 
+              d="M23.5 6.2a3.07 3.07 0 00-2.16-2.16C19.44 3.5 12 3.5 12 3.5s-7.44 0-9.34.54A3.07 3.07 0 00.5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3.07 3.07 0 002.16 2.16c1.9.54 9.34.54 9.34.54s7.44 0 9.34-.54a3.07 3.07 0 002.16-2.16c.54-1.9.54-5.8.54-5.8s0-3.9-.54-5.8zm-13.85 9.46V8.34l6.32 3.66-6.32 3.66z" 
+              clip-rule="evenodd" />
+    </svg>
+</a>
+{{ end }}
+{{ if .Site.Params.Social_media.LinkedIn.Enabled }}
+<a href="{{ $.Site.Params.Social_media.LinkedIn.Url }}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-300">
+    <span class="sr-only">LinkedIn</span>
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill-rule="evenodd" 
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.025-3.038-1.852-3.038-1.854 0-2.138 1.445-2.138 2.94v5.667H9.349V9h3.412v1.561h.049c.476-.9 1.635-1.85 3.364-1.85 3.601 0 4.272 2.369 4.272 5.456v6.285zM5.337 7.433a2.064 2.064 0 01-2.064-2.064c0-1.14.923-2.063 2.064-2.063s2.064.923 2.064 2.063a2.064 2.064 0 01-2.064 2.064zM7.114 20.452H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .775 0 1.732v20.536C0 23.225.792 24 1.771 24h20.453c.98 0 1.771-.775 1.771-1.732V1.732C24 .775 23.205 0 22.225 0z"
+              clip-rule="evenodd" />
+    </svg>
+</a>
+{{ end }}
+
+
         </div>
         <p class="mt-8 text-base text-center text-gray-400">&copy; {{ now.Format "2006" }}
             {{ .Site.Title }}. All rights

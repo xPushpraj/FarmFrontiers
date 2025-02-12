@@ -50,6 +50,7 @@ enableInlineShortcodes = true
 
 [params]
   author = 'Pushpz'
+  logo = "static/favicon/android-chrome-192x192.png"
   authorimage = "../assets/images/global/author.webp"
   og_image = 'images/pages/farm (5).jpeg'
   moto = "Super Fast, and Flexible"
@@ -168,16 +169,19 @@ enableInlineShortcodes = true
 [params.social_media]
   [params.social_media.github]
     enabled = true
-    url = 'https://github.com/nusserstudios'
-  [params.social_media.facebook]
-    enabled = true
-    url = 'https://facebook.com/nusserstudios'
-  [params.social_media.instagram]
-    enabled = true
-    url = 'https://instagram.com/nusserstudios'
+    url = 'https://github.com/xpushpraj'
   [params.social_media.twitter]
     enabled = true
-    url = 'https://twitter.com/nusserstudios'
+    url = 'https://twitter.com/Farmfrontiers'
+  [params.social_media.instagram]
+    enabled = true
+    url = 'https://www.instagram.com/xpushpraj'
+  [params.social_media.YouTube]
+    enabled = true
+    url = 'https://www.youtube.com/@Farmfrontiers'
+  [params.social_media.LinkedIn]
+    enabled = true
+    url = 'https://www.youtube.com/@Farmfrontiers'
 
 [menu]
   [[menu.main]]
