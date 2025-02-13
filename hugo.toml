@@ -53,10 +53,11 @@ enableInlineShortcodes = true
   logo = "static/favicon/android-chrome-192x192.png"
   authorimage = "../assets/images/global/author.webp"
   og_image = 'images/pages/farm (5).jpeg'
-  moto = "Super Fast, and Flexible"
-  description = "A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format."
+  moto = "Exploring the New Age of Agriculture"
+  description = "Exploring the New Age of Agriculture"
   disable_theme_toggle = false
   disable_stay_uptodate = false
+  customCSS = ["css/custom.css"]
 
 [taxonomies]
   category = 'Categories'
@@ -185,27 +186,27 @@ enableInlineShortcodes = true
 
 [menu]
   [[menu.main]]
-    identifier = "prose"
-    name = "Prose"
-    url = "/prose/"
+    identifier = "Agritechs"
+    name = "Agritechs"
+    url = "/posts/"
     weight = 10
 
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
+    identifier = "PAU"
+    name = "PAU News"
+    url = "/PAU News/"
     weight = 20
 
   [[menu.main]]
     identifier = "categories"
     pre = "dropdown"
-    name = "Categories"
+    name = "Myself"
     weight = 30
 
   [[menu.main]]
     identifier = "dropdown"
     pre = "complexdropdown"
-    name = "Dropdown"
+    name = "Discover"
     weight = 40
 
   [[menu.main]]
@@ -215,8 +216,8 @@ enableInlineShortcodes = true
     weight = 50
 
   [[menu.categories]]
-    identifier = "prose"
-    name = "Prose"
+    identifier = "Projects"
+    name = "Projects"
     url = "/prose/"
     weight = 10
 
@@ -227,10 +228,10 @@ enableInlineShortcodes = true
     weight = 20
 
   [[menu.dropdown]]
-    identifier = "appearance"
+    identifier = "Career"
     pre = "stars"
-    name = "Appearance"
-    post = "Easy customization"
+    name = "Career"
+    post = "Find Future Scope"
     url = "#"
     weight = 10
 
@@ -243,35 +244,35 @@ enableInlineShortcodes = true
     weight = 20
 
   [[menu.dropdown]]
-    identifier = "analytics"
+    identifier = "Other"
     pre = "piechart"
-    name = "Analytics"
-    post = "Take a look at your statistics"
+    name = "Other"
+    post = "Take a look at Probing"
     url = "#"
+    weight = 30
+
+  [[menu.footer]]
+    identifier = "Agritechs"
+    name = "Agritechs"
+    url = "/posts/"
+    weight = 10
+
+  [[menu.footer]]
+    identifier = "PAU"
+    name = "PAU News"
+    url = "/PAU News/"
+    weight = 20
+
+  [[menu.footer]]
+    identifier = "PAU"
+    name = "PAU News"
+    url = "/PAU News/"
     weight = 30
 
   [[menu.footer]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 10
-
-  [[menu.footer]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/categories/blog/"
-    weight = 20
-
-  [[menu.footer]]
-    identifier = "news"
-    name = "News"
-    url = "/categories/news/"
-    weight = 30
-
-  [[menu.footer]]
-    identifier = "prose"
-    name = "Prose"
-    url = "/prose/"
     weight = 40
 
   [[menu.footer]]

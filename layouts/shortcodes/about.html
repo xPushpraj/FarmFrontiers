@@ -1,0 +1,37 @@
+{{/* Add Font Awesome for Icons */}}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="{{ "css/about.css" | relURL }}">
+
+<div class="about-container flex flex-col md:flex-row items-center justify-center px-8 py-16 gap-12">
+    
+    <!-- Profile Image -->
+    <div class="relative w-72 h-72 rounded-full overflow-hidden shadow-lg transition-all duration-300 hover:scale-105">
+        {{ $img := resources.GetMatch (.Get "image") }}
+        {{ if $img }}
+        {{ $webp := $img.Resize "400x400 webp q90" }}
+        <img src="{{ $webp.RelPermalink }}" alt="Profile Picture" class="object-cover w-full h-full">
+        {{ end }}
+    </div>
+        <div class="about-content">
+            <h1>Hi, It's <span>{{ .Get "name" }}</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>{{ .Get "description" }}</p>
+            
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                {{ range split (.Get "social") "|" }}
+                {{ $parts := split . ":" }}
+                <a href="{{ index $parts 1 }}" target="_blank">
+                    <i class="fab fa-{{ index $parts 0 }}"></i>
+                </a>
+                {{ end }}
+            </div>
+
+            
+
+            <a href="{{ .Get "cv" }}" class="btn">Download CV</a>
+        </div>
+    </section>
+</div>
+{{ $aboutCSS := resources.Get "css/about.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $aboutCSS.RelPermalink }}">
