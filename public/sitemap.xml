@@ -2,16 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/agritechs/</loc>
+    <lastmod>2022-06-18T11:10:36+08:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/tags/blog/</loc>
     <lastmod>2022-06-18T11:10:36+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/blog/</loc>
     <lastmod>2022-06-18T11:10:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/pau-news/blog-post-1/</loc>
+    <loc>//localhost:1313/agritechs/blog-post-1/</loc>
     <lastmod>2022-06-18T11:10:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/blog-post-1/</loc>
+    <loc>//localhost:1313/pau-news/blog-post-1/</loc>
     <lastmod>2022-06-18T11:10:36+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
@@ -23,9 +26,6 @@
     <loc>//localhost:1313/pau-news/</loc>
     <lastmod>2022-06-18T11:10:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/</loc>
-    <lastmod>2022-06-18T11:10:36+08:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/tags/</loc>
     <lastmod>2022-06-18T11:10:36+08:00</lastmod>
   </url><url>
@@ -35,85 +35,85 @@
     <loc>//localhost:1313/categories/news/</loc>
     <lastmod>2022-05-18T11:10:36+08:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/agritechs/news-post-1/</loc>
+    <lastmod>2022-05-18T11:10:36+08:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/pau-news/news-post-1/</loc>
     <lastmod>2022-05-18T11:10:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/news-post-1/</loc>
-    <lastmod>2022-05-18T11:10:36+08:00</lastmod>
+    <loc>//localhost:1313/agritechs/news-post-2/</loc>
+    <lastmod>2022-04-18T11:10:36+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/pau-news/news-post-2/</loc>
     <lastmod>2022-04-18T11:10:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/news-post-2/</loc>
-    <lastmod>2022-04-18T11:10:36+08:00</lastmod>
+    <loc>//localhost:1313/agritechs/news-post-4/</loc>
+    <lastmod>2022-03-18T11:10:36+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/pau-news/news-post-4/</loc>
     <lastmod>2022-03-18T11:10:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/news-post-4/</loc>
+    <loc>//localhost:1313/agritechs/news-post-5/</loc>
     <lastmod>2022-03-18T11:10:36+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/pau-news/news-post-5/</loc>
     <lastmod>2022-03-18T11:10:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/news-post-5/</loc>
+    <loc>//localhost:1313/agritechs/news-post-6/</loc>
     <lastmod>2022-03-18T11:10:36+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/pau-news/news-post-6/</loc>
     <lastmod>2022-03-18T11:10:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/news-post-6/</loc>
+    <loc>//localhost:1313/agritechs/news-post-7/</loc>
     <lastmod>2022-03-18T11:10:36+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/pau-news/news-post-7/</loc>
     <lastmod>2022-03-18T11:10:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/news-post-7/</loc>
-    <lastmod>2022-03-18T11:10:36+08:00</lastmod>
+    <loc>//localhost:1313/agritechs/blog-post-2/</loc>
+    <lastmod>2021-12-18T11:10:36+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/pau-news/blog-post-2/</loc>
     <lastmod>2021-12-18T11:10:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/blog-post-2/</loc>
+    <loc>//localhost:1313/agritechs/blog-post-3/</loc>
     <lastmod>2021-12-18T11:10:36+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/pau-news/blog-post-3/</loc>
     <lastmod>2021-12-18T11:10:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/blog-post-3/</loc>
+    <loc>//localhost:1313/agritechs/blog-post-4/</loc>
     <lastmod>2021-12-18T11:10:36+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/pau-news/blog-post-4/</loc>
     <lastmod>2021-12-18T11:10:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/blog-post-4/</loc>
+    <loc>//localhost:1313/agritechs/blog-post-5/</loc>
     <lastmod>2021-12-18T11:10:36+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/pau-news/blog-post-5/</loc>
     <lastmod>2021-12-18T11:10:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/blog-post-5/</loc>
+    <loc>//localhost:1313/agritechs/blog-post-6/</loc>
     <lastmod>2021-12-18T11:10:36+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/pau-news/blog-post-6/</loc>
     <lastmod>2021-12-18T11:10:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/blog-post-6/</loc>
+    <loc>//localhost:1313/agritechs/blog-post-7/</loc>
     <lastmod>2021-12-18T11:10:36+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/pau-news/blog-post-7/</loc>
     <lastmod>2021-12-18T11:10:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/blog-post-7/</loc>
-    <lastmod>2021-12-18T11:10:36+08:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/contact/</loc>
     <lastmod>2021-12-18T03:10:36+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/pau-news/news-post-3/</loc>
+    <loc>//localhost:1313/agritechs/news-post-3/</loc>
     <lastmod>2021-12-18T11:10:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/news-post-3/</loc>
+    <loc>//localhost:1313/pau-news/news-post-3/</loc>
     <lastmod>2021-12-18T11:10:36+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/prose/</loc>

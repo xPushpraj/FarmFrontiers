@@ -54,7 +54,7 @@ enableInlineShortcodes = true
   authorimage = "../assets/images/global/author.webp"
   og_image = 'images/pages/farm (5).jpeg'
   moto = "Exploring the New Age of Agriculture"
-  description = "Exploring the New Age of Agriculture"
+  description = "Revolutionizing Agriculture with Modern Technology. Empowering Farmers with Smart Solutions & Knowledge"
   disable_theme_toggle = false
   disable_stay_uptodate = false
   customCSS = ["css/custom.css"]
@@ -92,70 +92,77 @@ enableInlineShortcodes = true
     min = '0.114.0'
 
 [params.p1]
-  heading = "Our mission"
+  heading = "Transforming Farming with Innovation"
   image = "/images/pages/farm (8).jpg"
 
 [[params.p1.content]]
-  text = "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque."
+  text = "Agriculture is transforming with smart farming, AI, and IoT, enabling real-time crop monitoring and efficient resource management. Drones and automated irrigation boost productivity while cutting costs."
 
 [[params.p1.content]]
-  text = "Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum."
+  text = "Precision agriculture optimizes farming with GPS, sensors, and analytics. Hydroponics and vertical farming offer soil-free solutions, ensuring sustainable food production in limited spaces."
 
 [[params.p1.content]]
-  text = "Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies."
+  text = "Biotechnology enhances crops with pest resistance and climate adaptability. AI-driven recommendations and robotic harvesting make farming smarter and more efficient for the future."
 
 [params.p2]
-  heading = "Our Achivements"
+  heading = "Life at Punjab Agricultural University (PAU)"
   image = "/images/pages/farm (1).jpg"
 
 [[params.p2.content]]
-  text = "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque."
+  text = "PAU is more than just a college; it’s a place where passion for agriculture meets innovation. From research labs to lush green fields, every corner of the campus inspires growth and learning. The hands-on experience and supportive mentors make the journey truly enriching."
 
 [[params.p2.content]]
-  text = "Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum."
+  text = "Beyond academics, PAU is a vibrant community filled with cultural events, student clubs, and friendships that last a lifetime. Whether it’s late-night study sessions or celebrations after a successful harvest, every moment here becomes a cherished memory"
 
 [[params.p2.content]]
-  text = "Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies."
-
-[[params.p2.content]]
-  text = "Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies."
-
+  text = "Walking through the campus, I feel a deep connection to agriculture and the people shaping its future. PAU has not only given me knowledge but also a purpose—to contribute to the farming community with innovation and heart."
 
 [params.p3]
-  heading = "Backed by world-renowned investors"
+  heading = "Tech Journey & Future in AgriTech"
 
 [[params.p3.content]]
-  text = "Sagittis scelerisque nulla cursus in enim consectetur quam."
+  text = "Exploring the power of Python, HTML, and JavaScript, I’ve been working on diverse projects while gearing up for AgriTech innovations"
 
 [[params.p3.links]]
-  text = "Meet our investors and advisors"
-  url = "#"
+  text = "Discover Innovations and What's Being Built"
+  url = "/posts/"
 
 [[params.p3.logos]]
   identifier = "a"
-  image = "images/global/sample-logo.svg"
-  alt = "a"
+  image = "images/LOGO/HTML.png"
+  alt = "HTML Logo"
 
 [[params.p3.logos]]
   identifier = "b"
+  image = "images/LOGO/CSS.png"
+  alt = "CSS Logo"
 
 [[params.p3.logos]]
   identifier = "c"
+  image = "images/LOGO/JS.png"
+  alt = "JavaScript Logo"
 
 [[params.p3.logos]]
   identifier = "d"
+  image = "images/LOGO/images.png"
+  alt = "Image Placeholder"
 
 [[params.p3.logos]]
   identifier = "e"
+  image = "images/LOGO/download.png"
+  alt = "Download Icon"
 
 [[params.p3.logos]]
   identifier = "f"
+  image = "images/LOGO/flask.png"
+  alt = "Flask Logo"
+
 
 [params.p4]
-  heading = "From the blog"
+  heading = "Explore the Latest Articles"
 
 [[params.p4.content]]
-  text = "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+  text = "Stay updated with insightful articles on modern agriculture, technology, and innovation. "
 
 [params.p5]
   heading = "Stay Up to Date"
@@ -188,7 +195,7 @@ enableInlineShortcodes = true
   [[menu.main]]
     identifier = "Agritechs"
     name = "Agritechs"
-    url = "/posts/"
+    url = "/Agritechs/"
     weight = 10
 
   [[menu.main]]
