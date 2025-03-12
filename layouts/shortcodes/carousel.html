@@ -1,0 +1,33 @@
+{{ $css := resources.Get "css/carousel.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+<div class="carousel-container">
+  <div class="carousel-track">
+    {{ range .Params }}
+      {{ $img := resources.GetMatch . }}
+      {{ if $img }}
+        {{ $webp := $img.Resize "800x600 webp q85" }}
+        <div class="carousel-slide">
+          <img src="{{ $webp.RelPermalink }}" 
+               alt="Carousel Image" 
+               loading="lazy"
+               class="hover-zoom">
+          {{ with $img.Exif }}
+            <div class="image-caption">
+              {{ .Tags.ImageDescription }}
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+  
+  <!-- Navigation -->
+  <button class="carousel-prev">‹</button>
+  <button class="carousel-next">›</button>
+  
+  <div class="carousel-dots"></div>
+</div>
+
+{{ $js := resources.Get "js/carousel.js" | minify | fingerprint }}
+<script defer src="{{ $js.RelPermalink }}"></script>

@@ -172,7 +172,7 @@ enableInlineShortcodes = true
   button = "Notify me"
 
 [[params.p5.content]]
-  text = "Sagittis scelerisque nulla cursus in enim consectetur quam."
+  text = "Get the latest updates on agriculture, technology, and innovations straight to your inbox!"
 
 [params.social_media]
   [params.social_media.github]

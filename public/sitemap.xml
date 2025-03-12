@@ -3,7 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/agritechs/</loc>
-    <lastmod>2022-06-18T11:10:36+08:00</lastmod>
+    <lastmod>2025-02-14T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/</loc>
+    <lastmod>2025-02-14T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/agriculture/</loc>
+    <lastmod>2025-02-14T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2025-02-14T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/agritechs/blog-post-1/</loc>
+    <lastmod>2025-02-14T10:00:00+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/blog/</loc>
     <lastmod>2022-06-18T11:10:36+08:00</lastmod>
@@ -11,16 +23,7 @@
     <loc>//localhost:1313/categories/blog/</loc>
     <lastmod>2022-06-18T11:10:36+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/agritechs/blog-post-1/</loc>
-    <lastmod>2022-06-18T11:10:36+08:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/pau-news/blog-post-1/</loc>
-    <lastmod>2022-06-18T11:10:36+08:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/</loc>
-    <lastmod>2022-06-18T11:10:36+08:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/</loc>
     <lastmod>2022-06-18T11:10:36+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/pau-news/</loc>

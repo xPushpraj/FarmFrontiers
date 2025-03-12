@@ -11,6 +11,7 @@
 <link rel="manifest" href="//localhost:1313/static/favicon/site.webmanifest">
 <link rel="mask-icon" href="//localhost:1313/static/favicon/safari-pinned-tab.svg" color="#5bbad5">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 <title itemprop="name"> PAU News | FarmFrontiers 
@@ -42,6 +43,7 @@
 
 
 <link rel="stylesheet" href="/css/style.min.08e3aa219f18b3ef0dd5234390f80b039cdbea44cf38a2fcc3f89d4d5a09c68f.css" integrity="sha256-COOqIZ8Ys+8N1SNDkPgLA5zb6kTPOKL8w/idTVoJxo8=" />
+
 
 </head>
 
@@ -198,7 +200,8 @@
             </span>
         </header>
         
-        <div class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50">
+        
+<div class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50">
     <div class="px-4 not-prose">
         <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3">
             
@@ -209,7 +212,6 @@
                     
                     <img src="//localhost:1313/../assets/images/featured/featured-img-placeholder_hu_24de146afff37b81.webp" class="object-fill overflow-hidden rounded-t-lg" width="100%" height=""
                          loading="lazy" alt="/../assets/images/featured/featured-img-placeholder.png" />
-
                     
                     
                 </a>
@@ -223,6 +225,39 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero.
                         </p>
                     </div>
+                    
+                    <div class="swiper-container mySwiper">
+                        <div class="swiper-wrapper">
+                            
+                        </div>
+                        
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    
+                    <script>
+                        var swiper = new Swiper(".mySwiper", {
+                            loop: true,
+                            autoplay: {
+                                delay: 3000,
+                                disableOnInteraction: false,
+                            },
+                            navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                            },
+                        });
+                    </script>
+
+                    
+
+
+
+<div class="timeline">
+    
+  </div>
+                    
+                    
                     <div class="flex pt-6 font-medium text-primary-600 dark:text-primary-100 text-md">
                         <span class="pr-2 font-black">Tags:</span>
                         <span>
@@ -260,7 +295,6 @@
                     
                     <img src="//localhost:1313/../assets/images/featured/featured-img-placeholder_hu_24de146afff37b81.webp" class="object-fill overflow-hidden rounded-t-lg" width="100%" height=""
                          loading="lazy" alt="/../assets/images/featured/featured-img-placeholder.png" />
-
                     
                     
                 </a>
@@ -274,6 +308,39 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero.
                         </p>
                     </div>
+                    
+                    <div class="swiper-container mySwiper">
+                        <div class="swiper-wrapper">
+                            
+                        </div>
+                        
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    
+                    <script>
+                        var swiper = new Swiper(".mySwiper", {
+                            loop: true,
+                            autoplay: {
+                                delay: 3000,
+                                disableOnInteraction: false,
+                            },
+                            navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                            },
+                        });
+                    </script>
+
+                    
+
+
+
+<div class="timeline">
+    
+  </div>
+                    
+                    
                     <div class="flex pt-6 font-medium text-primary-600 dark:text-primary-100 text-md">
                         <span class="pr-2 font-black">Tags:</span>
                         <span>
@@ -307,6 +374,27 @@
         </div>
     </div>
 </div>
+
+
+
+<div class="project-highlights">
+    <h3>Recent Initiatives</h3>
+    
+  </div>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        new Swiper(".swiper-container", {
+            loop: true,
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+        });
+    });
+</script>
 
     </article>
     <div class="max-w-xl mx-auto my-16">

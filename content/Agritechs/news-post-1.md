@@ -38,6 +38,16 @@ You will like those projects!
 
 ___
 
+## Farm Gallery
+
+{{< carousel 
+    "/images/pages/farm (1).jpeg"
+    "/images/pages/farm (1).jpg"
+    "/images/pages/farm (2).jpg"
+    "/images/pages/farm (5).jpeg"
+    "/images/profile.png"
+>}}
+
 
 ## Typographic replacements
 

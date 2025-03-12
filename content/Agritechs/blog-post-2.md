@@ -22,236 +22,223 @@ You will like those projects!
 
 ---
 
-# h1 Heading :blush:
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+### **Solutions to Survey Assignment**
 
+#### **1. Width of the River and Chainage of C**
 
-## Horizontal Rules
+To determine the width BC of the river:
 
-***
+- Given:
+  - Point E is on the perpendicular BE such that angle CEF is a right angle.
+  - Chainage of F = 1200 m
+  - Chainage of B = 1320 m
+  - Distance EB = 90 m
+
+Using trigonometry:
+
+- The length FB can be calculated as:
+  
+  \[
+  FB = FB_{\text{chainage}} - EB = (1320 - 1200) + 90 = 120 \, \text{m}
+  \]
+  
+- Since angle CEF is a right angle, triangle EFC is a right triangle with legs EB and FC.
+  
+- Using Pythagoras' theorem to find BC:
+  
+  \[
+  BC = \sqrt{EB^2 + EC^2} 
+  \]
+
+But since we need more information about the exact position of point C, further details or measurements are required.
+
+**Chainage of C**: To be determined based on additional calculations involving triangle EFC and the given distances.  
 
 ---
 
-___
+#### **2. Methods of Chaining with Obstacles**
 
+When obstacles like buildings or rivers prevent direct chaining, alternative methods include:
 
-## Typographic replacements
+1. **Ranging by Two Observers (Line Ranging)**: Two observers at either end use a common sighting point to mark intermediate points along the line.
+2. **Perpendicular Intersection**: Establishing perpendicular lines from two points and measuring their intersection for accurate alignment.
+3. **Optical Square or Theodolite Aiding**: Using precise instruments to lay out lines at right angles.
+4. **Electronics and GPS**: Modern techniques involve using electronic devices like GPS, laser rangefinders, or total stations for chaining.
 
-Enable typographer option to see result.
+---
 
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+#### **3. Construction of Optical Square**
 
-test.. test... test..... test?..... test!....
+An optical square uses light reflection to create a 90-degree angle between two perpendicular lines:
 
-!!!!!! ???? ,,  -- ---
+1. **Alignment**: The device is set up with two adjustable mirrors at 45 degrees.
+2. **Sighting**: A horizontal and vertical hair are aligned along the line of sight.
+3. **Intersecting Lines**: The crosshairs intersect, creating a precise right angle for laying out survey lines.
 
-"Smartypants, double quotes" and 'single quotes'
+---
 
+#### **4. Correct Distance Calculation**
 
-## Emphasis
+Correcting tape due to temperature and catenary:
 
-**This is bold text**
+- Formula:  
+  \[
+  L_{\text{corrected}} = \frac{L}{1 + \alpha (T - T_0)} 
+  \]
 
-__This is bold text__
+Given:
+- \( \alpha = 11 \times 10^{-6} / ^{\circ}\text{C} \)
+- \( T = 35^{\circ}\text{C}, T_0 = 25^{\circ}\text{C} \)
 
-*This is italic text*
+Calculation:
 
-_This is italic text_
+\[
+L_{\text{corrected}} = \frac{30}{1 + (11 \times 10^{-6})(10)} = \frac{30}{1.00011} \approx 29.997 \, \text{m}
+\]
 
-~~Strikethrough~~
+---
 
+#### **5. Line Ranging**
 
-## Blockquotes
+Line ranging involves:
 
+- Two observers holding rods at each end of the line.
+- Sighting along the line and marking intermediate points using a common sight to ensure alignment without crossing obstacles.
 
-> Blockquotes can also be nested...
->> ...by using additional greater-than signs right next to each other...
-> > > ...or with spaces between arrows.
+---
 
+#### **6. Sag Correction in Steel Tape**
 
-## Lists
+Sag correction formula:
 
-Unordered
+\[
+C_s = \frac{w^2 L}{8 T^3} 
+\]
 
-+ Create a list by starting a line with `+`, `-`, or `*`
-+ Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
-    * Ac tristique libero volutpat at
-    + Facilisis in pretium nisl aliquet
-    - Nulla volutpat aliquam velit
-+ Very easy!
+Given:
+- \( w = 77000 \, \text{kN/m}^3 \)
+- \( L = 10 \times 30 = 30 \, \text{m (each bay)} \)
+- \( T = 80 \, \text{N per bay} \)
 
-Ordered
+Calculate sag for one bay:
 
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
+\[
+C_s = \frac{(77000)^2 \times 10}{8 \times (80)^3} 
+\]
 
+Compute for three bays and sum corrections.
 
-1. You can use sequential numbers...
-1. ...or keep all the numbers as `1.`
+---
 
-Start numbering with offset:
+#### **7. Distance AB**
 
-57. foo
-1. bar
+Using the Law of Cosines in triangles ACB and ADB with given side lengths:
 
+- Given: \( AC = 300 \, \text{m}, CB = 150 \, \text{m}, BD = 175 \, \text{m}, DA = 250 \, \text{m} \)
+  
+- Apply Law of Cosines in triangle ACD:
+  
+  \[
+  AB^2 = AC^2 + AD^2 - 2 \cdot AC \cdot AD \cdot \cos(\theta)
+  \]
+  
+But without angle θ or more information, cannot calculate directly.  
 
-## Code
+---
 
-Inline `code`
+#### **8. Traversing and Plotting**
 
-Indented code
+- **Traversing**: Measure horizontal angles between points using a theodolite.
+- **Plotting**: Record distances and angles to create maps with scale drawings.
 
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
+---
 
+#### **9. Field vs. Office Work**
 
-Block code "fences"
+- **Field Work**: Actual measurement on-site, compensating for obstacles and conditions (e.g., uneven terrain).
+- **Office Work**: Data recording, calculation of errors, creating plans.
 
-```
-Sample text here...
-```
+---
 
-Syntax highlighting
+#### **10. True Distance Correction**
 
-``` js
-var foo = function (bar) {
-  return bar++;
-};
+Correcting tape due to temperature:
 
-console.log(foo(5));
-```
+Formula:
 
-## Tables
+\[
+L_{\text{true}} = \frac{L}{1 + \alpha (T - T_0)} 
+\]
 
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
+Given:
+- \( L = 30 \, \text{m} \)
+- \( \alpha = 3 \times 10^{-5} / ^{\circ}\text{C} \)
+- \( T = 35^{\circ}\text{C}, T_0 = 25^{\circ}\text{C} \)
 
-Right aligned columns
+Compute:
 
-| Option | Description |
-| ------:| -----------:|
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
+\[
+L_{\text{true}} = \frac{30}{1 + (3 \times 10^{-5})(10)} = \frac{30}{1.00003} \approx 29.997 \, \text{m}
+\]
 
+---
 
-## Links
+#### **11. Width of the River**
 
-[link text](http://dev.nodeca.com)
+Using bearings from point S to G and E:
 
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+- Apply trigonometry with given angles (325° and 230°) and distance EF = 30 m.
+- Calculate distances using sine or cosine rules.
 
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
+---
 
+#### **12. Reciprocal Ranging**
 
-## Images
+Reciprocal ranging involves measurements from both ends of the line towards each other:
 
-![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+- Continue until a common point is reached, ensuring alignment without crossing obstacles.
 
-Like links, Images also have a footnote style syntax
+---
 
-![Alt text][id]
+#### **13. True Area Calculation**
 
-With a reference later in the document defining the URL location:
+Scaling factor due to chain error:
 
-[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
+- Given: Chainage was too long by 20 cm (0.2 m) for 220 sq.cm plot.
+  
+- Area correction:
+  
+  \[
+  A_{\text{true}} = A_{\text{drawn}} \times \left(1 + \frac{\delta L}{L}\right)^2 
+  \]
 
+Compute true area based on scale.
 
-## Plugins
+---
 
-The killer feature of `markdown-it` is very effective support of
-[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
+#### **14. True Distance Correction**
 
+Correcting for chain length error:
 
-### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
+- Total chainage measured: 2400 m.
+  
+- Correction per meter:
+  
+  \[
+  \delta L = \alpha \cdot L_0 \cdot \Delta T
+  \]
+  
+Sum corrections over total distance.
 
-> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
->
-> Shortcuts (emoticons): :-) :-( 8-) ;)
+---
 
-see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
+#### **15. Offsets and Area Calculation**
 
+Offsets are perpendicular distances from a survey line to features.
 
-### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
+- Take using perpendicular rods or theodolites.
+- Plot on cross staff layout for accurate area calculation using trapezoidal or Simpson's rule.
 
-- 19^th^
-- H~2~O
+---
 
-
-### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
-
-++Inserted text++
-
-
-### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
-
-==Marked text==
-
-
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
-
-Footnote 1 link[^first].
-
-Footnote 2 link[^second].
-
-Inline footnote^[Text of inline footnote] definition.
-
-Duplicated footnote reference[^second].
-
-[^first]: Footnote **can have markup**
-
-    and multiple paragraphs.
-
-[^second]: Footnote text.
-
-
-### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
-
-Term 1
-
-:   Definition 1
-with lazy continuation.
-
-Term 2 with *inline markup*
-
-:   Definition 2
-
-        { some code, part of Definition 2 }
-
-    Third paragraph of definition 2.
-
-_Compact style:_
-
-Term 1
-  ~ Definition 1
-
-Term 2
-  ~ Definition 2a
-  ~ Definition 2b
-
-
-### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
-
-This is HTML abbreviation example.
-
-It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
-
-*[HTML]: Hyper Text Markup Language
-
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
-
-::: warning
-*here be dragons*
-:::
+Each problem requires detailed calculations based on geometric principles, material properties, and error corrections. Ensure all units (meters, kilograms) are consistent for accuracy in each solution.

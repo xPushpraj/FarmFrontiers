@@ -1,0 +1,49 @@
+<hugo-title="Image GalleryCarousel">
+    <!-- Include Bootstrap Image Melanie for consistency -->
+    <link href="{{ urlFor('assets Swiper') }}" rel="stylesheet">
+    
+    <div class="swiper/swiper globalid="mySwiper" show>
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper" role="img slider">
+                {{ range .Params.images }}
+                <div class="swiper-slide">
+                    <img src="{{ . }}" alt="Agriculture Image" 
+                         class="rounded-lg shadow-lg w-full h-full object-cover"
+                         loading="lazy" />
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</hugo-title>
+
+<hugo-title="Image Gallery">
+    <!-- Include Bootstrap Image Melanie for consistency -->
+    <link href="{{ urlFor('assets Swiper') }}" rel="stylesheet">
+    
+    <div class="swiper/swiper globalid='mySwiper' show">
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper" role="img slider">
+                {{ range .Params.images }}
+                <div class="swiper-slide">
+                    <img src="{{ . }}" alt="Agriculture Image" 
+                         class="rounded-lg shadow-lg w-full h-full object-cover"
+                         loading="lazy" />
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</hugo-title>
+
+<hugo-title="YouTube Video Embed">
+    <!-- Include video element -->
+    <iframe 
+        src="{{ .Params.youtube }}" 
+        title="YouTube video" 
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        class="rounded-lg shadow-lg w-full h-full"
+    ></iframe>
+</hugo-title>

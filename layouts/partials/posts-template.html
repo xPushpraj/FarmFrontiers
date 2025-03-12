@@ -1,3 +1,4 @@
+
 <div class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50">
     <div class="px-4 not-prose">
         <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3">
@@ -9,7 +10,6 @@
                     {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
                     <img src="{{ $postimage }}" class="object-fill overflow-hidden rounded-t-lg" width="100%" height=""
                          loading="lazy" alt="{{ .Title }}" />
-
                     {{ end }}
                     {{ end }}
                 </a>
@@ -23,6 +23,57 @@
                             {{ .Params.summary }}
                         </p>
                     </div>
+                    
+                    <div class="swiper-container mySwiper">
+                        <div class="swiper-wrapper">
+                            {{ range .Params.images }}
+                            <div class="swiper-slide">
+                                <img src="{{ . }}" alt="Agriculture Image" class="rounded-lg shadow-lg" />
+                            </div>
+                            {{ end }}
+                        </div>
+                        <!-- Navigation buttons -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    
+                    <script>
+                        var swiper = new Swiper(".mySwiper", {
+                            loop: true,
+                            autoplay: {
+                                delay: 3000,
+                                disableOnInteraction: false,
+                            },
+                            navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                            },
+                        });
+                    </script>
+
+                    <!-- YouTube Video Embed -->
+{{ with .Params.youtube }}
+<div class="mt-8">
+    <h2 class="text-2xl font-black mb-4">🎥 Watch This: Agriculture Insights</h2>
+    <div class="aspect-w-16 aspect-h-9">
+        <iframe src="{{ . }}" title="YouTube video" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen class="rounded-lg shadow-lg w-full h-full"></iframe>
+    </div>
+</div>
+{{ end }}
+
+<!-- In your theme's layouts/partials/ add a timeline.html -->
+<div class="timeline">
+    {{ range .Site.Data.timeline }}
+    <div class="timeline-item">
+      <div class="timeline-date">{{ .date }}</div>
+      <div class="timeline-content">{{ .content | markdownify }}</div>
+    </div>
+    {{ end }}
+  </div>
+                    
+                    
                     <div class="flex pt-6 font-medium text-primary-600 dark:text-primary-100 text-md">
                         <span class="pr-2 font-black">Tags:</span>
                         <span>
@@ -60,3 +111,30 @@
         </div>
     </div>
 </div>
+
+
+{{/* Regular HTML/Hugo template code here */}}
+<div class="project-highlights">
+    <h3>Recent Initiatives</h3>
+    {{ range first 3 (where .Site.RegularPages "Section" "projects") }}
+      <div class="project-item">
+        <h4>{{ .Title }}</h4>
+        <p>{{ .Description }}</p>
+        <a href="{{ .Permalink }}">Read more</a>
+      </div>
+    {{ end }}
+  </div>
+
+
+<!-- Swiper.js for Image Slider -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        new Swiper(".swiper-container", {
+            loop: true,
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+        });
+    });
+</script>

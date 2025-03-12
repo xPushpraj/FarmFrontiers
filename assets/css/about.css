@@ -1,125 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
-:root {
-    --bg-color: #f4f4f4;
-    --text-color: #333;
-    --primary-color: #007bff;
+/* Base Styles */
+.about-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
-[data-theme="dark"] {
-    --bg-color: #1e1e1e;
-    --text-color: #f4f4f4;
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
 }
 
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
-    transition: background 0.3s, color 0.3s;
-}
-
-.about {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.about-img img {
-    width: 300px;
-    height: 300px;
+.profile-image {
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    z-index: -1;
-    width: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-.about-img img:hover {
-    transform: scale(1.05);
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.about-content {
-    max-width: 600px;
-    margin-left: 40px;
+.social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
-.about-content h1 {
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-.about-content h3 {
-    font-size: 2rem;
-    color: var(--primary-color);
-    font-weight: 600;
-}
-
-.about-content p {
-    font-size: 1.2rem;
-    margin: 1rem 0;
-    line-height: 1.6;
-}
-
-.social-icons {
-    margin-top: 1.5rem;
-}
-
-.social-icons a {
-    display: inline-block;
-    font-size: 1.8rem;
-    margin-right: 10px;
-    color: var(--primary-color);
+.social-icon {
+    font-size: 1.5rem;
+    color: #2a7ae2;
     transition: transform 0.3s ease;
 }
 
-.social-icons a:hover {
-  scale: 1.1;
-  color: rgb(99, 173, 223); 
-  background-color: transparent;
-  font-weight: 700;
+.social-icon:hover {
+    transform: translateY(-3px);
 }
+
+/* Sections */
+.section {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .profile-card {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .vision-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* Timeline */
+.timeline {
+    border-left: 3px solid #2a7ae2;
+    padding-left: 2rem;
+    margin-left: 1rem;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* Vision Grid */
+.vision-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.vision-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.vision-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
   
-
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: white;
-    font-size: 1rem;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-}
-
-.btn:hover {
-  scale: 1.1;
-  color: rgb(99, 173, 223);
-  border: 2px solid rgb(87, 148, 228);
-  background-color: transparent;
-  font-weight: 700;
-  box-shadow: 0 0 40px rgb(40, 66, 155);
-}
-
-/* Layout */
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-}
-
-/* Image */
-.about-container img {
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    border-radius: 50%;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.about-container img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
+    height: 100%;
+    border: 0;
+  }
